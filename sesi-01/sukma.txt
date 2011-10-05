@@ -1,0 +1,24 @@
+SUKMA WIJAYA
+4510210001
+Fakultas Teknik Informatika
+UNIVERSITAS PANCASILA
+
+Latihan Pemograman 1
+
+oleh : http//endy.artivisi.com
+hhhh
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+qwqqqqqqqqqqqqqqqqqqqqq
+=======
+QQQQQQQQQQQBG
+>>>>>>> Branch_master
+fdfdfdsfsdfddfds
+=======
+eeeeeeeeeeeeeeeeeeeee
+
+wwwwwwwwwwwwwwwwwwww
+
+sssssssssssssssssss
+>>>>>>> Branch_master

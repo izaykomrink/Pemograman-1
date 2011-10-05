@@ -1,0 +1,72 @@
+1. instal git -->> centang windows
+2. instal Tortoisegit
+3. buat folder -->> klik kanan pilih git create here -->> muncul folder hiden bernama .git
+4. buat file txt beri nama Latihan-1.txt -->> buat tulisan di bagian pertama
+5. klik kanan pada file pilih GIT Comit Master --> isi keterangan :
+	message : versi pertama
+	centang file latihan-1.txt
+	klik OK
+6. muncul pesan succses -->> close
+7. lakukan beberapa kali pada perintah no 6.
+8. melihat history perubahan :
+	- klik kanan di dalam folder 
+	- tortoiseGit >> show Log
+	- semua perubahan yang dilakukan pada langkah 6 dan 7 akan tampil.
+9. Data terdahulu :
+	- klik kanan di dalam folder
+	- tortoiseGit >> show Log
+	- pilih commit yang terdahulu (dari no 2 ke bawah)
+	- klik kanan > switch/checkout
+	- pada tag option jangan ada yang dicentang >> OK
+	- Buka Kembali file txtnya
+10. Data Terbaru :
+	- klik kanan di dalam folder
+	- Tortoise > switch/checkout
+	- pada tag switsh to : branch -->> master
+	- OK
+	- Buka Kembali file txtnya maka kembali ke semula .
+cat : jika gagal klik kanan pada text pilih tortoise > revert
+
+11. buat branch bugfix:
+	- tortoise > create branch
+	- nama branch : bugfix
+	- based on : Head (master)
+12. melihat branch ang sedang aktif 
+    klik kanan, lihat (jangan di klik) commit -> master
+    master adalah branch aktif
+13. pindah ke branch bugfix
+	- tortoise > switch/checkout
+	- branch : pilih bugfix
+	- cek branch yang sdang aktif seperti langkah 12
+	  harusnya tulisannya comit -> bugfix
+14. tambah beberapa baris baru ke branch master
+15. edit baris yang sudah ada di branch bugfix
+16. shoe log untuk melihat posisi branch.
+    centang all branches
+17. merge bugfix ke dalam master (branch tujuan = master)
+	- pindah ke branch tujuan
+	- tortoise > merge
+	- pilih branch asal
+	- klik OK
+	- lihat pesannya :successful atau conflict
+	- klik close
+18. successful terjadi bila dua file yang digabung diedit di baris yang berbeda
+
+cat : bila pesan "Conflic/fatal" bukan success maka lakukan langkah seperti ini:
+	1. pada isi notepad yang ada ===>> HEAD dihapus dan pilih salah satu merge --> save
+	2. klik kanan tortoiseGit > Resolve > commit
+	3. klik kanan commit > isi ket > ok
+	4. cek sho log > garis nyambung
+19.---ketinggalan
+20. register di github
+21. daftarkan url repository github di respository local tortoise > setting > remote
+    remote : github
+    URL : Paste URL yang sudah dicopy di langkah sebelumnya > ok
+22. upload repo local ke github
+    klik kanan > git sync
+    local branch : dikosongkan 
+    remote Branch : dikosongkan 
+    remote URL : pilih Github dari Dropdown
+    klik Push
+    refresh webite github
+
